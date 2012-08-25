@@ -7,7 +7,7 @@ use Tk;
 use Tk::Entry;
 
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use base qw(Tk::Derived Tk::Entry);
 
@@ -32,7 +32,7 @@ Tk::TipEntry - An entry with tooltip in the entry if it's empty
 This widget is derived from L<Tk::Entry>. It implements an other kind of
 tooltip, that is displayed inside the entry when it's empty.
 The tooltip will be removed, if the entry gets the focus and reinserted, if
-the entry loses the focus and it's value is empty (C<$entry->get() eq ''>).
+the entry loses the focus and it's value is empty (C<$entry-E<gt>get() eq ''>).
 
 In addition, the entry evaluates the escape-key. If the entry has the focus
 and the escape-key is pressed, the original input will be restored. If there

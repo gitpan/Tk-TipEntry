@@ -21,4 +21,4 @@ requires:
   Test::More: 0.98
   Test::Pod: 1.45
   Tk: 804.029
-version: 0.01
+version: 0.02
