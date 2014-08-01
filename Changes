@@ -1,5 +1,10 @@
 Revision history for Perl extension Tk::TipEntry.
 
+0.03  Fri Aug 01 23:34:00 2012
+	- improved MakeFile.PL
+	- added github repo info
+	- added POD::Coverage test
+
 0.02  Sat Aug 25 13:52:00 2012
 	- fixed minor typo in POD
 

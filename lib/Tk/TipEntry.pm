@@ -6,8 +6,7 @@ use warnings;
 use Tk;
 use Tk::Entry;
 
-use vars qw($VERSION);
-$VERSION = '0.02';
+our $VERSION = '0.03';
 
 use base qw(Tk::Derived Tk::Entry);
 
@@ -34,14 +33,14 @@ tooltip, that is displayed inside the entry when it's empty.
 The tooltip will be removed, if the entry gets the focus and reinserted, if
 the entry loses the focus and it's value is empty (C<$entry-E<gt>get() eq ''>).
 
-In addition, the entry evaluates the escape-key. If the entry has the focus
-and the escape-key is pressed, the original input will be restored. If there
+In addition, the entry evaluates the escape key. If the entry has the focus
+and the escape key is pressed, the original input will be restored. If there
 is no previous input, the tooltip will be displayed again.
 
 
 =head1 OPTIONS
 
-Any option exept the -tip will be passed to the construktor of the
+Any option exept the C<-tip> will be passed to the construktor of the
 L<Tk::Entry>. The -text option is altered minimally.
 
 
@@ -56,19 +55,19 @@ The default value is 'Search...'.
 =head2 -text
 (altered option)
 
-If there is no -text attribute for the Entry, the tooltip will be set initially
-as default text. Specify -text if you want another initial input.
+If there is no C<-text> attribute for the Entry, the tooltip will be set initially
+as default text. Specify C<-text> if you want another initial input.
 
 The default value is the same as for -tip.
 
 
 =head1 METHODS
 
-=head2 ClassInit( $class, $mw )
-
-Bind FocusIn, FocusOut and Escape to events.
-
 =cut
+
+# ClassInit( $class, $mw )
+#
+# Bind FocusIn, FocusOut and Escape to events.
 
 sub ClassInit {
 	my ($class, $mw) = @_;
@@ -83,16 +82,10 @@ sub ClassInit {
 
 
 
-=head2 Populate( \%args )
-
-This method is part of the underlying Tk inheritance mechanisms.
-You the programmer do not necessarily even need to know it exists;
-we document it here only to satisfy Pod coverage tests.
-
-Sets default for -tip, unless specified. Set -text initially to -tip, if there 
-is -tip, but no -text.
-
-=cut
+# Populate( %args )
+# 
+# Sets default for -tip, unless specified. Set -text initially to -tip,
+# if there is -tip, but no -text.
 
 sub Populate {
 	my ($self, $args) = @_;

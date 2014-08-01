@@ -4,9 +4,9 @@
       "Alexander Becker <c a p f a n ^at^ g m x -dot- d e>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.120921",
    "license" : [
-      "unknown"
+      "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -22,7 +22,10 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : "0",
+            "Test::More" : "0.98",
+            "Test::Pod" : "1.0",
+            "Test::Pod::Coverage" : "1.08"
          }
       },
       "configure" : {
@@ -32,12 +35,19 @@
       },
       "runtime" : {
          "requires" : {
+            "ExtUtils::MakeMaker" : "6.98",
             "Test::More" : "0.98",
             "Test::Pod" : "1.45",
-            "Tk" : "804.029"
+            "Tk" : "804.029",
+            "perl" : "5.012002"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.02"
+   "resources" : {
+      "repository" : {
+         "url" : "https://github.com/asb-capfan/Tk-TipEntry"
+      }
+   },
+   "version" : "0.03"
 }
