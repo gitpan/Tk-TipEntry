@@ -1,18 +1,16 @@
-use 5.012002;
+use 5.008008;
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
 WriteMakefile(
     NAME              => 'Tk::TipEntry',
     VERSION_FROM      => 'lib/Tk/TipEntry.pm', # finds $VERSION
-    ABSTRACT_FROM  => 'lib/Tk/TipEntry.pm', # retrieve abstract from module
+    ABSTRACT_FROM     => 'lib/Tk/TipEntry.pm', # retrieve abstract from module
     PREREQ_PM         => {
-		# e.g., Module::Name => 1.1
-		'Test::More' => 0.98,
-		'Test::Pod' => 1.45,
-		'Tk' => 804.029,
+        # e.g., Module::Name => 1.1
+        'Test::More' => 0.98,
+        'Test::Pod' => 1.45,
+        'Tk' => 804,
         'ExtUtils::MakeMaker' => '6.98',
-	},
+    },
     TEST_REQUIRES => {
         # modules only required for testing
         'Test::More' => '0.98',
@@ -27,5 +25,5 @@ WriteMakefile(
             repository => 'https://github.com/asb-capfan/Tk-TipEntry',
         },
     },
-    MIN_PERL_VERSION => 5.012002,
+    MIN_PERL_VERSION => 5.008008,
 );

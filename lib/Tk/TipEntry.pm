@@ -1,12 +1,12 @@
 package Tk::TipEntry;
 
-use 5.012002;
+use 5.008008;
 use strict;
 use warnings;
 use Tk;
 use Tk::Entry;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use base qw(Tk::Derived Tk::Entry);
 

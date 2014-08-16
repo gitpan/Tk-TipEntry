@@ -1,4 +1,4 @@
-Tk-TipEntry version 0.01
+Tk-TipEntry version 0.04
 ========================
 
 This widget is derived from L<Tk::Entry>. It implements an other kind of
